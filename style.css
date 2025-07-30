@@ -3,10 +3,10 @@ h1{
 }
 body{
   
-  background-color: blueviolet;
+  background: linear-gradient(to right ,blue, white,black)
 }
 p{
-  color: aquamarine;
+  color: rgb(0, 12, 8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
 }
@@ -38,3 +38,74 @@ p{
     #link{
       font-size: larger;
     }
+
+    /* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BMW Themed Form Section */
+#contact-form {
+  background: #ffffff;
+  padding: 40px;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-top: 8px solid #0066b1; /* BMW blue top line */
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Form Labels */
+#contact-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form Inputs */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="password"],
+#contact-form input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+#contact-form input:focus {
+  border-color: #0066b1;
+  outline: none;
+}
+
+/* Submit Button */
+#contact-form input[type="submit"] {
+  background-color: #0066b1;
+  color: white;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #004d8c;
+}
